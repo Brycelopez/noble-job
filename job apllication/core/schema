@@ -1,0 +1,12 @@
+    CREATE TABLE Dentists (
+    dentist_id AUTO_INCREMENT INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone_number VARCHAR(15),
+    specialization VARCHAR(100),
+    license_number VARCHAR(50) NOT NULL UNIQUE,
+    years_of_experience INT,
+    clinic_specialization VARCHAR(200),
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
